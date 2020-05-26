@@ -9,11 +9,45 @@
         <item name="android:background">@color/translucent</item>
     </style>
 
+    <style name="dialog_live" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified</item>
+        <item name="android:gravity">bottom</item>
+    </style>
 
     <style name="TranslucentFullScreenTheme" parent="FullScreenTheme">
         <item name="android:windowBackground">@color/translucent</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
+
+    <style name="JadeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.App</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+
+
+    <style name="Animation.Activity.Translucent.App" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
 
     <style name="FullScreenTheme" parent="AppTheme">
         <item name="android:windowFullscreen">true</item>

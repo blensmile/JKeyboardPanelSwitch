@@ -39,6 +39,9 @@
         <activity
             android:name=".activity.TranslucentActivity"
             android:theme="@style/TranslucentFullScreenTheme"/>
+        <activity android:name=".activity.CowpeaActivity"
+            android:theme="@style/JadeTheme"
+            />
 
 
     </application>

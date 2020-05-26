@@ -191,7 +191,7 @@ public class ChattingResolvedActivity extends AppCompatActivity {
     public boolean dispatchKeyEvent(KeyEvent event) {
         if (event.getAction() == KeyEvent.ACTION_UP
                 && event.getKeyCode() == KeyEvent.KEYCODE_BACK
-                && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && mPanelRoot.getVisibility() == View.VISIBLE) {
             KPSwitchConflictUtil.hidePanelAndKeyboard(mPanelRoot);
             return true;
         }

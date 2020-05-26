@@ -87,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onClickBlen(final View view){
+        startActivity(new Intent(this,CowpeaActivity.class));
+    }
+
     /**
      * Resolved for Full Screen Theme or Translucent Status Theme.
      */
