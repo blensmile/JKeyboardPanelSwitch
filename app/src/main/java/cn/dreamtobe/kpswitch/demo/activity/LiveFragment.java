@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.dreamtobe.kpswitch.demo.R;
+import cn.dreamtobe.kpswitch.util.KPSwitchConflictUtil;
+import cn.dreamtobe.kpswitch.util.KeyboardUtil;
 
 public class LiveFragment extends Fragment {
 
@@ -18,4 +20,11 @@ public class LiveFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_live,container,false);
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+//        KeyboardUtil.attach(getActivity(), view.findViewById(R.id.llPannel));
+//        KPSwitchConflictUtil.attach(view.findViewById(R.id.llInput), view.findViewById(R.id.tvSend), view.findViewById(R.id.etComment));
+    }
 }

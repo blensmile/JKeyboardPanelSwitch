@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.dreamtobe.kpswitch.demo.R;
+import cn.dreamtobe.kpswitch.util.KeyboardUtil;
 
 public class PagerFragmentDialog extends DialogFragment {
 
@@ -31,6 +32,7 @@ public class PagerFragmentDialog extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        AndroidBug5497Workaround.assistActivity(getActivity());
         return inflater.inflate(R.layout.fragment_pager,container,false);
     }
 

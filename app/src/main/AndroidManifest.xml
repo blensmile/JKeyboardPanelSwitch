@@ -41,6 +41,7 @@
             android:theme="@style/TranslucentFullScreenTheme"/>
         <activity android:name=".activity.CowpeaActivity"
             android:theme="@style/JadeTheme"
+            android:windowSoftInputMode="adjustNothing"
             />
 
 

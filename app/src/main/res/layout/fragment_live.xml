@@ -1,61 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<cn.dreamtobe.kpswitch.demo.activity.FitSysWindowFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8000"
+    android:fitsSystemWindows="true"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:id="@+id/llInput"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:orientation="horizontal"
-        android:background="#ffff"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="4dp"
-        android:paddingTop="4dp"
-        app:layout_constraintRight_toLeftOf="parent"
+        android:text="Hello World!"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        />
+<!--    <cn.dreamtobe.kpswitch.widget.KPSwitchFSPanelFrameLayout-->
+<!--        android:id="@+id/llPannel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="#ffff"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        android:paddingBottom="4dp"-->
+<!--        android:paddingTop="4dp"-->
+<!--        app:layout_constraintRight_toLeftOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        />-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llInput"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="#ffff"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        android:paddingBottom="4dp"-->
+<!--        android:paddingTop="4dp"-->
+<!--        app:layout_constraintRight_toLeftOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/llPannel"-->
+<!--        >-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etComment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/chatting_edit_bg"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusableInTouchMode="true"-->
+<!--            android:focusable="true"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:textColor="#f333"-->
+<!--            android:textColorHint="#8000"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textSize="14dp"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:inputType="text"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:maxLines="3"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvSend"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:minWidth="80dp"-->
+<!--            android:background="#ff00"-->
+<!--            android:textColor="#ffff"-->
+<!--            android:layout_gravity="right|center_vertical"-->
+<!--            android:onClick="onClick"-->
+<!--            android:text="发送"-->
+<!--            android:gravity="center"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+    <include layout="@layout/layout_send_message_bar"
         android:layout_gravity="bottom"
-        >
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <EditText
-            android:id="@+id/etComment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/chatting_edit_bg"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:clickable="true"
-            android:focusableInTouchMode="true"
-            android:focusable="true"
-            android:gravity="center_vertical"
-            android:textColor="#f333"
-            android:textColorHint="#8000"
-            android:layout_weight="1"
-            android:textSize="14dp"
-            android:imeOptions="actionDone"
-            android:inputType="text"
-            android:layout_marginRight="10dp"
-            android:maxLines="3"
-            />
-
-        <TextView
-            android:id="@+id/tvSend"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:minWidth="80dp"
-            android:background="#ff00"
-            android:textColor="#ffff"
-            android:layout_gravity="right|center_vertical"
-            android:onClick="onClick"
-            android:text="发送"
-            android:gravity="center"
-            />
-
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</cn.dreamtobe.kpswitch.demo.activity.FitSysWindowFrameLayout>

@@ -20,7 +20,7 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowSoftInputMode">adjustUnspecified</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
         <item name="android:gravity">bottom</item>
     </style>
 
